@@ -33,7 +33,7 @@ export default function IntroComp(props) {
             <Frame w="100%" h="100%">
                 <div class="flex-container-vert" style={{ textAlign: "center", marginTop: "10px"}}>
                     <div >
-                        <img src="src/images/patrick-star/uc3.gif"></img>
+                        <img src="./uc3.gif"></img>
                     </div>
                     <div>
                         <b>WARNING!</b> This site is currently in development. Please proceed with caution.

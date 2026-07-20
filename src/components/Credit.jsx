@@ -61,7 +61,7 @@ export default function Credit(props) {
           <Frame w="100%" h="100%" bgColor="white" boxShadow="$in">
             <div className="flex-container contact-info">
               <div className="box">
-                <img src="src/images/patrick-star/egg.gif"></img>
+                <img src="./egg.gif"></img>
               </div>
               <div className="box">
                 <p>

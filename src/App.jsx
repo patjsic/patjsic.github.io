@@ -102,7 +102,7 @@ function App() {
       document.body.style.backgroundSize = "cover";
     } else if (path.includes("bliss")) {
       document.body.style.backgroundImage =
-        'url("./patrick-star/winxp.webp")';
+        'url("./winxp.webp")';
       document.body.style.backgroundSize = "cover";
       document.body.style.backgroundRepeat = "no-repeat";
     }

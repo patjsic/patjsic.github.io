@@ -84,7 +84,7 @@ export default function Contact(props) {
                     rel="noopener noreferrer"
                   >
                     <img
-                      src="src/images/normal-images/linkedin.png"
+                      src="./normal-images/linkedin.png"
                       alt="LinkedIn"
                       style={{ width: "25px" }}
                     />

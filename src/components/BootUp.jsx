@@ -42,7 +42,7 @@ export default function StartupScreen(props) {
                         overflow: "hidden",
                 }}>
                     <img 
-                    src="src/images/patrick-star/boot.gif"
+                    src="./boot.gif"
                     alt="Startup gif animation"
                     style={{
                         width: "100%",

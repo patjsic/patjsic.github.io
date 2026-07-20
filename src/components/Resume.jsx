@@ -84,7 +84,7 @@ export default function Resume(props) {
           <Tabs defaultActiveTab="About">
             <Tab title="About">
               <div style={{ display: 'inline-flex' }}>
-                <Avatar  src="src/images/patrick-star/pstar_science.jpeg" 
+                <Avatar  src="./pstar_science.jpeg" 
                 style={{ marginTop : '20px', marginLeft : '2px'}}/>
                 <div style={{ marginLeft: '12px' }}>
                   <h3>Hello! I'm Pat</h3>

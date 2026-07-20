@@ -12,19 +12,19 @@ const files = [
     id: "Screenshot_20070913_129543",
     type: "JPG File",
     size: "203 KB",
-    imgPath: "src/images/patrick-star/diehochzeits.webp",
+    imgPath: "./diehochzeits.webp",
   },
   {
     id: "Screenshot_19950824_071495",
     type: "PNG File",
     size: "950 KB",
-    imgPath: "src/images/patrick-star/win95.jpeg",
+    imgPath: "./win95.jpeg",
   },
   {
     id: "Sonoma_county_1998",
     type: "PNG File",
     size: "670 KB", //the Bliss photo was originally captured with a Mamiya RZ67
-    imgPath: "src/images/patrick-star/windows-bliss-sad.webp",
+    imgPath: "./windows-bliss-sad.webp",
   }
 ]
 

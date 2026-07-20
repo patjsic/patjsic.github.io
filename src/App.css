@@ -3,7 +3,6 @@ body {
     /* center fixed; */
   background: rgb(0, 128, 128) no-repeat center
     center fixed;
-  /* background: url("src/images/patrick-star/winxp.webp") no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
