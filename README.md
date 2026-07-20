@@ -1,6 +1,6 @@
 # My website
 
-** Currently still in development as of 7/2026 **
+**Currently still in development as of 7/2026**
 
 Welcome to my website! I pulled the awesome desktop template from [hawwokitty's](https://github.com/hawwokitty) implementation! 
 
