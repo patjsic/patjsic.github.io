@@ -129,7 +129,7 @@ function App() {
   }
 
   const handleFinishBoot = () => {
-      playSound('./startup.mp3')
+      playSound('startup.mp3')
       toggleWindow("boot", false);
       toggleWindow("desktop", true);
       toggleWindow("intro", true);

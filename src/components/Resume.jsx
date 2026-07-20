@@ -106,7 +106,7 @@ export default function Resume(props) {
               </Fieldset>
               <br/>
               <div style={{ textAlign: "center" }}>
-                <a href='src/assets/PS_Resume_new_2026.pdf' target='_blank'>
+                <a href='./PS_Resume_new_2026.pdf' target='_blank'>
                 <Button 
                   size='lg'
                 >
