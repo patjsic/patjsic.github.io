@@ -125,6 +125,7 @@ function App() {
   const handleFinishBoot = () => {
       toggleWindow("boot", false);
       toggleWindow("desktop", true);
+      toggleWindow("intro", true);
   };
 
   return (
