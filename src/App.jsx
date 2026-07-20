@@ -13,13 +13,16 @@ import RecycleBin from "./components/RecycleBin";
 import RecyclePrompt from "./components/RecyclePrompt";
 import Credit from "./components/Credit";
 import IntroComp from "./components/IntroComp";
+import BootUp from "./components/BootUp";
 
 import { useState } from "react";
 
 function App() {
 
   const initWindows = {
-    intro: true,
+    boot: true,
+    intro: false,
+    desktop: false,
     paint: false,
     artsAndCrafts: false,
     resume: false,
@@ -36,6 +39,10 @@ function App() {
   const [showWindows, setShowWindows] = useState(initWindows);
   const [resumePrompts, setResumePrompts] = useState([]); //used to manage windows coming from resume comp
   const [recycleImagePath, setRecycleImagePath] = useState(null); //used to manage windows from recycle bin comp
+
+  // const onStartUp = () => {
+
+  // }
 
   const toggleWindow = (windowName, isVisible) => {
     setShowWindows((prev) => ({
@@ -85,7 +92,7 @@ function App() {
   const handleSwapBg = (path) => {
     if (path.includes("diehochzeits")){
       document.body.style.backgroundImage =
-        'url("src/images/patrick-star/diehochzeits.webp")';
+        'url("./diehochzeits.webp")';
 
       document.body.style.backgroundSize = "100px auto";
       document.body.style.backgroundRepeat = "repeat";
@@ -95,7 +102,7 @@ function App() {
       document.body.style.backgroundSize = "cover";
     } else if (path.includes("bliss")) {
       document.body.style.backgroundImage =
-        'url("src/images/patrick-star/winxp.webp")';
+        'url("./patrick-star/winxp.webp")';
       document.body.style.backgroundSize = "cover";
       document.body.style.backgroundRepeat = "no-repeat";
     }
@@ -115,6 +122,11 @@ function App() {
     toggleWindow("diehosit", true);
   }
 
+  const handleFinishBoot = () => {
+      toggleWindow("boot", false);
+      toggleWindow("desktop", true);
+  };
+
   return (
     <>
       <WindowSizeProvider>
@@ -133,6 +145,12 @@ function App() {
           openTrace={() => handleOpenWindow("trace")}
           openRecycleBin={() => handleOpenWindow("recycleBin")}
           openIntro={()=> handleOpenWindow("intro")}
+
+          show={showWindows.desktop}
+        />
+        <BootUp
+          show={showWindows.boot}
+          toggle={handleFinishBoot}
         />
         <IntroComp
           show={showWindows.intro}

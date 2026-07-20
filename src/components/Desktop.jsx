@@ -19,11 +19,15 @@ export default function Desktop(props) {
   const handleOpenResume = props.openResume;
   const handleOpenContact = props.openContact;
 
+  const showDesktop = props.show;
+
   const handleToggleIcon = (iconId) => {
     setActiveIcon((prev) => (prev === iconId ? null : iconId));
   };
 
   return (
+    <>
+    {showDesktop && (
     <div className="desktop-icons">
       <div
         className={activeIcon === 1 ? "active-icon" : "inactive-icon"}
@@ -73,6 +77,7 @@ export default function Desktop(props) {
         <Awfxcg321304 variant="32x32_4" />
         <p>Contact</p>
       </div>
-    </div>
+    </div>)}
+    </>
   );
 }
