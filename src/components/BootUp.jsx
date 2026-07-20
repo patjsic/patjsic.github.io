@@ -27,7 +27,6 @@ export default function StartupScreen(props) {
     return (
         <>
             {showStartUp && (
-
                 <div
                     style={{
                         position: "fixed",

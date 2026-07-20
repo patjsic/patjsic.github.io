@@ -51,7 +51,13 @@ function App() {
     }));
   };
 
+  const playSound = (file) => {
+      const audio = new Audio(file);
+      audio.play();
+  }
+
   const addResumeHelp = () => {
+    playSound('./erro.mp3');
     setResumePrompts((previousPrompts) => {
       const nextId =
         previousPrompts.length === 0
@@ -123,6 +129,7 @@ function App() {
   }
 
   const handleFinishBoot = () => {
+      playSound('./startup.mp3')
       toggleWindow("boot", false);
       toggleWindow("desktop", true);
       toggleWindow("intro", true);
