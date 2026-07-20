@@ -1,8 +1,11 @@
-# My Portfolio
+# My website
 
-Welcome to my portfolio! 🎉 This is a React app built with Vite, designed to showcase a bit of what I do—whether it's coding, creating art, gaming, or just having fun. Feel free to click around and explore!
+** Currently still in development as of 7/2026 **
+
+Welcome to my website! I pulled the awesome desktop template from [hawwokitty's](https://github.com/hawwokitty) implementation! 
 
 ## Libraries used
 
-To give this portfolio a retro Windows 95 vibe, I used the awesome [React95](https://github.com/React95/React95) library. It's all about that nostalgia, right?
+[React95](https://github.com/React95/React95)
+[react-old-icons](https://gsnoopy.github.io/react-old-icons/)
 
