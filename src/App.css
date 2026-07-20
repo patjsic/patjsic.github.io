@@ -1,0 +1,158 @@
+body {
+  /* background: rgb(0, 235, 239) no-repeat center */
+    /* center fixed; */
+  background: rgb(0, 128, 128) no-repeat center
+    center fixed;
+  /* background: url("src/images/patrick-star/winxp.webp") no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+}
+
+.desktop-icons {
+  width: 70px;
+  height: 70px;
+  margin: 4px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.desktop-icons p {
+  text-align: center;
+}
+
+.rc-list.active {
+  background-color: #000080;
+  color: white;
+}
+
+.rc-list.active .rc-list-span {
+  color: white;
+}
+
+.active-icon {
+  background: rgba(12, 0, 120, 0.6);
+  border: 1px white dotted;
+}
+
+.inactive-icon {
+  text-decoration: none;
+}
+
+.dropdown-menu {
+  position: absolute; /* Ensure it positions relative to the modal */
+  z-index: 9999; /* Ensure it appears above other elements */
+}
+
+.address-bar {
+  display: flex;
+  padding: 5px;
+}
+
+.arts-fields {
+  display: flex;
+  /* height: 90%; */
+}
+
+.arts-picture-text {
+  display: flex;
+  padding: 5px;
+}
+
+.arts-img-div {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.arts-img-div > .arts-frame {
+  position: absolute;
+  top: 0;
+  left: 50%; /* Center horizontally */
+  transform: translateX(
+    -50%
+  ); /* Pull it back by 50% of its width to center it */
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arts-img-div img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  padding: 3px;
+}
+
+.arts-tree {
+  width: 100%;
+  overflow: auto;
+}
+
+.arts-bg-button {
+  margin-left: 10px;
+}
+
+.resume-skills {
+  padding: 5px;
+}
+
+.resize {
+  resize: both;
+  overflow: auto;
+}
+
+.contact-icons a {
+  padding: 3px;
+}
+
+.contact-info {
+  padding: 15px;
+}
+
+.rc-flex-container {
+  display: flex;
+}
+
+.rc-list {
+  display: flex;
+  user-select: none;
+}
+
+.rc-item {
+  min-width: 180px;
+  width: 100%;
+}
+
+.rc-list-span {
+  display: inline-block;
+  padding-top: 5px;
+}
+
+span.gentle-tilt-move-shake:hover {
+  display: inline-block;
+  animation: tilt-n-move-shaking 0.25s infinite;
+}
+
+/* span.gentle-tilt-move-shake {
+  animation: tilt-n-move-shaking 0.25s infinite;
+} */
+
+@keyframes tilt-n-move-shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
